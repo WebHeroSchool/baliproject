@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'MuseoSansCyrl';
-  src: url("../fonts/MuseoSansCyrl.woff") format("woff");
+  src: url("fonts/MuseoSansCyrl.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PTSerif-Bold';
-  src: url("../fonts/PTSerif-Bold.woff") format("woff");
+  src: url("fonts/PTSerif-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
