@@ -1,19 +1,13 @@
 @font-face {
   font-family: 'MuseoSansCyrl';
-  src: url("../fonts/MuseoSansCyrl.eot");
-       url("../fonts/MuseoSansCyrl.woff") format("woff"),
-       url("../fonts/MuseoSansCyrl.ttf") format("truetype"),
-       url("../fonts/MuseoSansCyrl.svg") format("svg");
+  src: url("../fonts/MuseoSansCyrl.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PTSerif-Bold';
-  src: url("../fonts/PTSerif-Bold.eot");
-       url("../fonts/PTSerif-Bold.woff") format("woff"),
-       url("../fonts/PTSerif-Bold.ttf") format("truetype"),
-       url("../fonts/PTSerif-Bold.svg") format("svg");
+  src: url("../fonts/PTSerif-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
