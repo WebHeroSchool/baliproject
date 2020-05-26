@@ -12,6 +12,7 @@
 .logo {
   width: 146.18px;
   height: 54.84px;
+  margin-right: -23px;
 }
 
 .header {
@@ -26,17 +27,20 @@
   flex: 1;
   display: flex;
   justify-content: center;
-
+  margin-top: 32px;
 }
 
 .stumb {
   flex: 2;
+  margin-right: 221px;
 }
 
 .desktop-nav {
-  flex: 2;
+  flex: 1.5;
   display: flex;
   justify-content: space-between;
+  margin-right: 24px;
+  margin-top: 29px;
 }
 
 .desktop-nav__item {
@@ -69,11 +73,12 @@
   height: 30px;
   cursor: pointer;
   transition: .4s;
+  z-index: 9999;
 }
 .mobile-nav__icon {
   display: block;
   position: relative;
-  background-color: #fcf5ed;
+  background-color: #e5e5e5;
   width: 90%;
   height: 4px;
   transition: .4s;
@@ -99,7 +104,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 50px;
+  top: 0px;
   left: 0;
   right: 0;
   z-index: 999;
