@@ -15,6 +15,8 @@
   margin-right: -23px;
 }
 
+/*Стили header*/
+
 .header {
   width: 90%;
   height: 200px;
@@ -35,6 +37,8 @@
   margin-right: 221px;
 }
 
+/*Desktop-menu*/
+
 .desktop-nav {
   flex: 1.5;
   display: flex;
@@ -49,7 +53,97 @@
   font-family: "MuseoSansCyrl", Arial, sans-serif;
   font-weight: 500;
   font-size: 22px;
+  cursor: pointer;
+  transition: color 2s ease-out;
 }
+
+.desktop-nav__item:hover {
+color: #f74242;
+}
+
+/*Стили body*/
+
+.main-wrap{
+  display: flex;
+}
+
+.info{
+  flex: 1;
+  display: flex;
+  margin-top: 154px;
+}
+
+.info__content{
+  max-width: 550px;
+}
+
+ .info__img {
+  background-image: url(img/bali.png);
+  background-repeat: no-repeat;
+  background-size: 95%;
+  width: 537px;
+  height: 252px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-left: 207px;
+}
+
+.info__text {
+  width: 535px;
+  font-family: "MuseoSansCyrl", Arial, sans-serif;
+  font-size: 22px;
+  color: #F8EEE4;
+  margin-left: 220px;
+  margin-top: 47px;
+}
+
+.info__btn {
+  width: 293.76px;
+  height: 61.88px;
+  background: #D4BEA3;
+  border-radius: 48px;
+  font-family: "MuseoSansCyrl", Arial, sans-serif;
+  font-size: 22px;
+  color: #FFFFFF;
+  cursor: pointer;
+  border: none;
+  margin-left: 220px;
+  margin-top: 13px;
+  transition: background 1s ease-out;
+  outline: none;
+}
+
+.info__btn:hover {
+background: #f74242;
+}
+
+.pic {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 500px;
+  align-items: center;
+}
+
+.pic__img-temple  {
+  width: 309.31px;
+  height: 421.88px;
+  margin-right: 33px;
+  margin-top: 13px;
+}
+
+.pic__img-gates {
+  width: 288.31px;
+  height: 379.69px;
+  margin-right: 33px;
+}
+
+.pic__img-field {
+  width: 207.85px;
+  height: 379.69px;
+}
+
+/*Mobile-menu*/
 
 .mobile-nav {
   position: fixed;
@@ -61,7 +155,7 @@
   right: 10px;
   height: 50px;
   z-index: 9999999;
-  background-color: transparent
+  margin-top: 100px;
 }
 
 .mobile-nav__btn {
@@ -69,8 +163,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 35px;
-  height: 30px;
+  width: 111px;
+  height: 107px;
   cursor: pointer;
   transition: .4s;
   z-index: 9999;
@@ -80,7 +174,7 @@
   position: relative;
   background-color: #e5e5e5;
   width: 90%;
-  height: 4px;
+  height: 14px;
   transition: .4s;
 }
 .mobile-nav__icon::after, .mobile-nav__icon::before {
@@ -89,14 +183,14 @@
   position: absolute;
   background: #e5e5e5;
   width: 100%;
-  height: 4px;
+  height: 14px;
   transition: .4s;
 }
 .mobile-nav__icon::after {
-  top: 8px;
+  top: 29px;
 }
 .mobile-nav__icon::before {
-  top: -8px;
+  top: -28px;
 }
 .mobile-nav__container {
   position: fixed;
@@ -112,24 +206,35 @@
   opacity: 1;
   transition: .5s;
   overflow: hidden;
-  background-color: #e5e5e5;
+  background-color: #fff;
 }
 .mobile-nav__list {
   transition: .5s;
   list-style: none;
-  padding-left: 0;
-  margin-top: -50px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 30px;
 }
+
 .mobile-nav__item {
-  font-size: 30px;
-  padding-bottom: 15px;
+  font-size: 120px;
+  padding: 48px;
 }
+
 .mobile-nav__link {
   text-decoration: none;
   color: #000;
   font-family: "MuseoSansCyrl", Arial, sans-serif;
   font-weight: bold;
+  transition: color 2s easy-out;
 }
+
+.mobile-nav__link:hover {
+  color:#f74242;
+}
+
 .mobile-nav__checkbox {
   display: none;
 }
@@ -140,6 +245,12 @@
 .mobile-nav__checkbox:checked ~ .mobile-nav__container {
   height: 100%;
 }
+
+.mobile-nav__checkbox:checked ~ .mobile-nav__btn {
+  margin-bottom: 159px;
+  margin-right: -37px;
+}
+
 .mobile-nav__checkbox:checked ~ .mobile-nav__btn .mobile-nav__icon {
   background: transparent;
 }
@@ -156,6 +267,85 @@
   -webkit-transform: rotate(45deg);
   background-color: #172f27;
 }
+/*Адаптатив*/
+
+/*1433*/
+
+@media (max-width: 1433px){
+  .wrap {
+    width: 1920px;
+  }
+}
+
+/*1024*/
+
+@media (max-width: 1024px){
+  .wrap {
+    width: 1920px;
+  }
+  .header {
+    align-items: flex-end;
+    width: 104%;
+  }
+  .logo {
+    width: 204.18px;
+    height: 79.84px;
+    margin-right: 103px;
+    margin-bottom: -5px;
+  }
+  .desktop-nav__item{
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+  .stumb {
+    flex: 1;
+    margin-right: 304px;
+  }
+  .info {
+    margin-top: 310px;
+  }
+  .info__img {
+    width: 769px;
+    height: 360px;
+    margin-left: 93px;
+  }
+  .info__subtitle {
+    width: 655px;
+  }
+  .info__text {
+    width: 807px;
+    font-size: 32px;
+    margin-left: 113px;
+    margin-top: 67px;
+  }
+  .info__btn {
+    width: 416.76px;
+    height: 90.88px;
+    font-size: 32px;
+    margin-left: 114px;
+    margin-top: 15px;
+  }
+  .pic {
+    margin-left: 468px;
+  }
+  .pic__img-temple {
+    width: 455.31px;
+    height: 600.88px;
+    margin-right: 47px;
+    margin-top: 27px;
+  }
+  .pic__img-gates {
+    width: 404.31px;
+    height: 539.69px;
+    margin-right: 48px;
+    margin-top: 22px;
+  }
+  .pic__img-field {
+    width: 293.85px;
+    height: 542.69px;
+    margin-top: 13px;
+  }
+}
 
 @media (min-width: 1024px) {
   .mobile-nav {
@@ -169,14 +359,49 @@
   }
 }
 
-@media (max-width: 1433px) {
-  .desktop-nav__item {
-    font-size: 16px;
+/*375*/
+
+@media (max-width: 375px){
+  .pic {
+    display: none;
+  }
+  .logo {
+    width: 419.18px;
+    height: 154.84px;
+    margin-bottom: -118px;
+  }
+  .mobile-nav {
+    margin-top: 228px;
+    margin-right: 98px;
+  }
+  .info__subtitle {
+    width: 1121px;
+    height: 182px;
+    margin-right: -41px;
+  }
+  .info {
+    margin-top: 536px;
+  }
+  .info__img {
+    width: 1312px;
+    height: 654px;
+    margin-left: 78px;
+  }
+  .info__text {
+    width: 1214px;
+    font-size: 73px;
+    margin-left: 155px;
+    margin-top: 215px;
+    text-align: center;
+  }
+  .info__btn {
+    border-radius: 87px;
+  }
+  .info__btn {
+    width: 831.76px;
+    height: 175.88px;
+    font-size: 67px;
+    margin-left: 302px;
+    margin-top: 61px;
   }
 }
-
-@media (max-width: 1433px) {
-  .logo {
-    width: 104px;
-    height: 39px;
-  }
