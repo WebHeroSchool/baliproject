@@ -1,4 +1,4 @@
-.wrap {
+﻿.wrap {
   background-image: url(img/iswanto-arif-448003-unsplash.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -7,7 +7,7 @@
   margin-bottom: 150px;
 }
 
-/*Стили header*/
+/*Стили heaer*/
 
 .logo {
   width: 146.18px;
