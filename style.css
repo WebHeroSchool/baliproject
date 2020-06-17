@@ -1,4 +1,4 @@
-.wrap {
+﻿.wrap {
   background-image: url(img/iswanto-arif-448003-unsplash.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -140,6 +140,21 @@ background: #f74242;
   height: 374.69px;
 }
 
+
+.pic__img-temple  {
+  height: 421.88px;
+  margin-right: 33px;
+}
+
+.pic__img-gates {
+  height: 376.69px;
+  margin-right: 33px;
+}
+
+.pic__img-field {
+  height: 374.69px;
+}
+
 /*Mobile-menu*/
 
 .mobile-nav {
@@ -222,12 +237,21 @@ background: #f74242;
   font-family: "MuseoSansCyrl", Arial, sans-serif;
   font-weight: bold;
   transition: color 2s ease-out;
+<<<<<<< HEAD
 }
 
 .mobile-nav__link:hover {
   color:#f74242;
 }
 
+=======
+}
+
+.mobile-nav__link:hover {
+  color:#f74242;
+}
+
+>>>>>>> vim
 .mobile-nav__checkbox {
   display: none;
 }
@@ -260,6 +284,7 @@ background: #f74242;
   background-color: #172f27;
 }
 /*Адаптатив*/
+<<<<<<< HEAD
 
 /*1621*/
 
@@ -318,7 +343,6 @@ background: #f74242;
   }
 }
 
-
 /*1433*/
 
 @media (max-width: 1433px){
@@ -352,6 +376,7 @@ background: #f74242;
   }
   .info__text {
     margin: 0px 42px 28px 0px;
+    font-size: 16px;
     width: 401px;
   }
   .info__btn {
@@ -691,7 +716,7 @@ background: #f74242;
 
 @media (max-width: 999px) {
   .desktop-nav {
-     display: none;
+    display: none;
   }
 }
 
